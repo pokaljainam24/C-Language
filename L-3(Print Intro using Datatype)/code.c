@@ -10,5 +10,4 @@ void main(){
     printf("\nMy GRID :- %d", myInt);
     printf("\nMy Clg :- %s",myString);
     printf("\nMy clgCGPA :- %.2f", myFloat);
-
 }
