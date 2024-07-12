@@ -9,3 +9,5 @@ int main(){
     printf("\nValue of pi: %.2f",pi);
     printf("\nArea of circle: %f",area);
 }
+
+
