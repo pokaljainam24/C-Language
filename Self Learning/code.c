@@ -46,25 +46,6 @@
 // }
 
 
-// #include <stdio.h>
-
-// int main()
-// {
-//     int num;
-
-//     printf("Enter a number:\n");
-//     scanf("%d", &num);
-
-//     if (num > 100)
-//     {
-//         num -= 10;
-//     }
-
-//     printf("The result is: %d\n", num);
-//     return 0;
-// }
-
-
 #include <stdio.h>
 
 int main()
@@ -74,15 +55,34 @@ int main()
     printf("Enter a number:\n");
     scanf("%d", &num);
 
-    if (num > 0)
+    if (num > 100)
     {
-        num = -num;
-    }
-    else if (num < 0)
-    {
-        num = -num;
+        num -= 10;
     }
 
-    printf("The converted number is: %d\n", num);
+    printf("The result is: %d\n", num);
     return 0;
 }
+
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int num;
+
+//     printf("Enter a number:\n");
+//     scanf("%d", &num);
+
+//     if (num > 0)
+//     {
+//         num = -num;
+//     }
+//     else if (num < 0)
+//     {
+//         num = -num;
+//     }
+
+//     printf("The converted number is: %d\n", num);
+//     return 0;
+// }
