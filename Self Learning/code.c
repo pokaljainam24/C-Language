@@ -19,6 +19,7 @@
 //     return 0;
 // }
 
+
 // #include <stdio.h>
 
 // int main()
@@ -43,6 +44,7 @@
 
 //     printf("The middle number is: %d\n", middle);
 // }
+
 
 // #include <stdio.h>
 
