@@ -87,20 +87,48 @@
 //     return 0;
 // }
 
-// print even and odd number using for loop
 
-#include<stdio.h>
+#include <stdio.h>
 
-void man(){
+int main()
+{
     int num;
+
     printf("Enter a number:\n");
     scanf("%d", &num);
-    for (int i = 0; i <= num; i++){
-        if (i % 2 == 0){
-            printf("%d is even\n", i);
-        }
-        else{
-            printf("%d is odd\n", i);
-        }
-    }
+    num = -num;
+    printf("The converted number is: %d\n", num);
 }
+
+
+// print even and odd number using for loop
+
+// #include<stdio.h>
+
+// void man(){
+//     int num;
+//     printf("Enter a number:\n");
+//     scanf("%d", &num);
+//     for (int i = 0; i <= num; i++){
+//         if (i % 2 == 0){
+//             printf("%d is even\n", i);
+//         }
+//         else{
+//             printf("%d is odd\n", i);
+//         }
+//     }
+// }
+
+// #include<stdio.h>
+
+// void main(){
+//     int i;
+//     for (i = 0; i < 10; i++){
+//             printf("%d ", ++i);
+//             printf(" %d\n",++i);
+//             --i;
+//     }
+// }
+
+
+

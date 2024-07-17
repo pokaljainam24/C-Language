@@ -1,17 +1,21 @@
 #include <stdio.h>
 
-// int main() 
+// int main()
 // {
 //     int num;
 
 //     printf("Enter a number:\n");
 //     scanf("%d", &num);
 
-//     if (num > 100)
+//     if (num > 0)
 //     {
-//         num -= 10;
+//         num = -num;
+//     }
+//     else if (num < 0)
+//     {
+//         num = -num;
 //     }
 
-//     printf("The result is: %d\n", num);
+//     printf("The converted number is: %d\n", num);
 //     return 0;
 // }
