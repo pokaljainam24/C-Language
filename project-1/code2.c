@@ -7,17 +7,22 @@
 void main(){
     int base_salary;
     float hra, da, ta, gross_salary,r;
+    
     printf("Enter the base salary: ");
     scanf("%d", &base_salary);
+
     printf("Enter the percentage of HRA: ");
     scanf("%f", &hra);
     r=hra / base_salary * 100;
+
     printf("Enter the percentage of DA:");
     scanf("%f", &da);
     r=da / base_salary * 100;
+
     printf("Enter the percentage of TA: ");
     r=ta / base_salary * 100;
     scanf("%f", &ta);
+
     gross_salary = base_salary + hra + da + ta;
     printf("The gross salary is: %f", gross_salary);
 }
