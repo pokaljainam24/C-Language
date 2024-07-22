@@ -10,4 +10,3 @@ int main(){
     printf("\nArea of circle: %f",area);
 }
 
-
