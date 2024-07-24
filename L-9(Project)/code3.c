@@ -32,9 +32,9 @@ int main()
     { 
         grade = 'A';
     }
-    else if (average >= 80 && average <= 90)
+    else if (average >= 80 && average <= 90) 
     {
-        grade = 'B';
+        grade = 'B';  
     }
     else if (average >= 70 && average <= 80)
     {
