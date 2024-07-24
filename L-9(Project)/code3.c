@@ -3,13 +3,6 @@
 // - Use nested if statements and else-if ladder to determine the grade based on the average score.
 // - Display the grades to the user
 
-// - Use the following grade scale:
-// - 90-100: A
-// - 80-89: B
-// - 70-79: C
-// - 60-69: D
-// - 0-59: F
-
 #include <stdio.h>
 
 int main()
@@ -35,23 +28,23 @@ int main()
     total = score1 + score2 + score3 + score4 + score5;
     average = total / 5;
     
-    if (average >= 90 && average <= 100)
+    if (average >= 90)
     {
         grade = 'A';
     }
-    else if (average >= 80 && average <= 89)
+    else if (average >= 80 && average <= 90)
     {
         grade = 'B';
     }
-    else if (average >= 70 && average <= 79)
+    else if (average >= 70 && average <= 80)
     {
         grade = 'C';
     }
-    else if (average >= 60 && average <= 69)
+    else if (average >= 60 && average <= 70)
     {
         grade = 'D';
     }
-    else if (average >= 0 && average <= 59)
+    else if (average >= 0 && average <= 60)
 
     {
         grade = 'F';
@@ -63,3 +56,13 @@ int main()
     printf("The average score is %d\n", average);
     printf("The grade is %c\n", grade);
 }
+
+// OUTPUT:
+
+//        Enter the first score: 50
+//        Enter the second score: 80
+//        Enter the third score: 60
+//        Enter the fourth score: 40
+//        Enter the fifth score: 90
+//        The average score is 64
+//        The grade is D
