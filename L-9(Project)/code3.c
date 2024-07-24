@@ -29,7 +29,7 @@ int main()
     average = total / 5;
     
     if (average >= 90)
-    {
+    { 
         grade = 'A';
     }
     else if (average >= 80 && average <= 90)
