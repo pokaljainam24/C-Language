@@ -37,10 +37,7 @@
 //     }
 //  }
 
-
-
 // Type-2
-
 
 #include <stdio.h>
 
@@ -57,6 +54,7 @@ int main()
     switch (language_choice)
     {
     case 1:
+        printf("------------------------------------\n");
         printf("Press 1 for Internet Recharge\n");
         printf("Press 2 for Top-up Recharge\n");
         printf("Press 3 for Special Recharge\n");
@@ -81,6 +79,7 @@ int main()
         break;
 
     case 2:
+        printf("------------------------------------\n");
         printf("Press 1 for Internet Recharge\n");
         printf("Press 2 for Top-up Recharge\n");
         printf("Press 3 for Special Recharge\n");
@@ -105,6 +104,7 @@ int main()
         break;
 
     case 3:
+        printf("------------------------------------\n");
         printf("Press 1 for Internet Recharge\n");
         printf("Press 2 for Top-up Recharge\n");
         printf("Press 3 for Special Recharge\n");
