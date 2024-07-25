@@ -57,6 +57,7 @@ int main()
     printf("The grade is %c\n", grade);
 }
 
+
 // OUTPUT:
 
 //        Enter the first score: 50
