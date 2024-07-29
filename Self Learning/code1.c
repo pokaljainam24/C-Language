@@ -8,24 +8,24 @@ int main()
     {
         for (int j = size; j >= i; j--)
         {
-            printf(" %d", " ");
+            printf(" %d ", j);
         }
-        for (int k = 0; k < i * 2 - 1; k++)
+        for (int k = 0; k < i; k++)
         {
-            printf("%d ", num++);
+            printf("  ");
         }
         num = 1;
         printf("\n");
     }
-    for (int i = 1; i <= size - 1; i++)
+    for (int i = 1; i <= size; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (int j = 1; j <= i; j++)
         {
-            printf(" %d", " ");
+            printf(" %d ", j);
         }
-        for (int k = (size - i) * 2 - 1; k > 0; k--)
+        for (int k = 5; k > 0; k--)
         {
-            printf("%d ", num++);
+            printf("  ");
         }
         num = 1;
         printf("\n");
