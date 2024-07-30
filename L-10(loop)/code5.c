@@ -6,8 +6,25 @@
 // Output:
 // 2020, 2024, 2028, 2032, 2034, 2040
 
-#include<stdio.h>
+// #include<stdio.h>
 
+// int main(){
+//     int start, end;
+//     printf("Enter the first number: ");
+//     scanf("%d", &start);
+//     printf("Enter the second number: ");
+//     scanf("%d", &end);
+//     int year = start;
+//     while (year <= end) {
+//         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+//         printf("%d, ", year);
+//         year++;
+//     }
+// } 
+
+// Type-2 without condition leap year
+
+#include<stdio.h>
 int main(){
     int start, end;
     printf("Enter the first number: ");
@@ -16,8 +33,8 @@ int main(){
     scanf("%d", &end);
     int year = start;
     while (year <= end) {
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        if (year % 4 == 0 && year % 100 != 0 || year)
         printf("%d, ", year);
         year++;
     }
-} 
+}
