@@ -17,23 +17,47 @@
 //     }
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int n = 5;
+//     int a = 1;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         int value = 1;
+//         printf("%d ", value);
+
+//         for (int j = 1; j < i; j++)
+//         {
+//             value += a;
+//             printf("%d ", value);
+//             ++a;
+//         }
+
+//         printf("\n");
+//     }
+// }
+
 #include <stdio.h>
 
 int main()
 {
-    int n = 5;
-    int a = 1;
+    int rows = 5; 
+    int value;   
+    int diff;     
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= rows; i++)
     {
-        int value = 1;
-        printf("%d ", value);
+        value = 1;
+        diff = i - 1;
 
-        for (int j = 1; j < i; j++)
+        for (int j = 1; j <= i; j++)
         {
-            value += a;
-            printf("%d ", (value-1));
-            ++a;
+            printf("%d ", value);
+            value += diff;
+            diff++;
         }
 
         printf("\n");
