@@ -8,7 +8,7 @@ int main()
     {
         for (int j = size; j >= i; j--)
         {
-            printf(" %d ", j);
+            printf(" %d ", i);
         }
         for (int k = 0; k < i; k++)
         {
@@ -21,7 +21,7 @@ int main()
     {
         for (int j = 1; j <= i; j++)
         {
-            printf(" %d ", j);
+            printf(" %d ", i);
         }
         for (int k = 5; k > 0; k--)
         {
