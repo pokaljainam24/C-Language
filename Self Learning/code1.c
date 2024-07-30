@@ -1,33 +1,41 @@
+// 1
+// 1 2
+// 1 3 5
+// 1 6 11 16
+// 1 17 33 49 65 print pattern using for loop
+
+// #include<stdio.h>
+// int main(){
+//     int n = 5;
+//     int i, j, k = 1;
+//     for (i = 1; i <= n; i++){
+//         for (j = 1; j <= i; j++){
+//             printf("%d ", k);
+//             k += j;
+//         }
+//         printf("\n");
+//     }
+// }
+
 #include <stdio.h>
 
 int main()
 {
-    int size = 5;
-    int num = 1;
-    for (int i = 1; i <= size; i++)
+    int n = 5;
+    int a = 1;
+
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = size; j >= i; j--)
+        int value = 1;
+        printf("%d ", value);
+
+        for (int j = 1; j < i; j++)
         {
-            printf(" %d ", i);
+            value += a;
+            printf("%d ", (value-1));
+            ++a;
         }
-        for (int k = 0; k < i; k++)
-        {
-            printf("  ");
-        }
-        num = 1;
-        printf("\n");
-    }
-    for (int i = 1; i <= size; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            printf(" %d ", i);
-        }
-        for (int k = 5; k > 0; k--)
-        {
-            printf("  ");
-        }
-        num = 1;
+
         printf("\n");
     }
 }
