@@ -4,13 +4,16 @@
 // Example:
 // Output: a, e, i, m, q, u, y
 
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
     char ch = 'a';
-    do{
-        printf("%c ",ch);
+    do
+    {
+        printf("%c ", ch);
         ch = ch + 4;
-    }
-    while(ch <= 'z');
+    } while (ch <= 'z');
 }
+
+
