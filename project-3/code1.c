@@ -15,5 +15,3 @@ int main()
         ch = ch + 4;
     } while (ch <= 'z');
 }
-
-
