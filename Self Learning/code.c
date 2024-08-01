@@ -88,17 +88,17 @@
 // }
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-    int num;
+// int main()
+// {
+//     int num;
 
-    printf("Enter a number:\n");
-    scanf("%d", &num);
-    num = -num;
-    printf("The converted number is: %d\n", num);
-}
+//     printf("Enter a number:\n");
+//     scanf("%d", &num);
+//     num = -num;
+//     printf("The converted number is: %d\n", num);
+// }
 
 
 // print even and odd number using for loop

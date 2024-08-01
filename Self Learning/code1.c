@@ -40,26 +40,56 @@
 //     }
 // }
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int rows = 5;
+//     int value;
+//     int diff;
+
+//     for (int i = 1; i <= rows; i++)
+//     {
+//         value = 1;
+//         diff = i - 1;
+
+//         for (int j = 1; j <= i; j++)
+//         {
+//             printf("%d ", value);
+//             value += diff;
+//             diff++;
+//         }
+
+//         printf("\n");
+//     }
+// }
+
+// #include<stdio.h>
+
+// void main(){
+//     printf("1 \n");
+//     printf("1 2\n");
+//     printf("1 3 5\n");
+//     printf("1 6 11 16\n");
+//     printf("1 17 33 49 65\n");
+// }
+
 #include <stdio.h>
 
-int main()
+void main()
 {
-    int rows = 5; 
-    int value;   
-    int diff;     
+    int a, b, c = 0;
 
-    for (int i = 1; i <= rows; i++)
+    for (int i = 1; i <= 5; i++)
     {
-        value = 1;
-        diff = i - 1;
-
+        a = 1;
         for (int j = 1; j <= i; j++)
         {
-            printf("%d ", value);
-            value += diff;
-            diff++;
+            printf("%d ", a);
+            b = a;
+            a = c + a;
         }
-
+        c = b;
         printf("\n");
     }
 }
