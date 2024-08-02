@@ -18,3 +18,4 @@ int main()
         i += 2;
     } while (i <= n);
 }
+
