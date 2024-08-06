@@ -26,7 +26,7 @@ int main()
     int n, i, a[100], b[100], c[100];
     printf("Enter array size: ");
     scanf("%d", &n);
-    
+
     printf("Enter array A's elements:\n");
     for (i = 0; i < n; i++)
     {
@@ -40,12 +40,12 @@ int main()
         scanf("%d", &b[i]);
     }
     for (i = 0; i < n; i++)
-    {
+    {        
         c[i] = a[i] + b[i];
     }
     printf("Array C is: ");
     for (i = 0; i < n; i++)
     {
-        printf("%d, ", c[i]);   
+        printf("%d, ", c[i]);
     }
 }

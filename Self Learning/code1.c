@@ -81,7 +81,7 @@ void main()
     int a, b, c = 0;
 
     for (int i = 1; i <= 5; i++)
-    {
+    { 
         a = 1;
         for (int j = 1; j <= i; j++)
         {
@@ -89,7 +89,7 @@ void main()
             b = a;
             a = c + a;
         }
-        c = b;
+        c = b; 
         printf("\n");
     }
 }
