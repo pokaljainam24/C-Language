@@ -22,4 +22,4 @@ int main()
     printf("Even numbers: %d\n", even);
     printf("Odd numbers: %d\n", odd);
 }
-  
+
