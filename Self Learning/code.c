@@ -181,7 +181,6 @@ int main()
 
     for (i = 10; i >= 6; i--)
     {
-
         for (j = 10; j > i; j--)
         {
             printf("  ");
@@ -192,5 +191,5 @@ int main()
             printf("%d ", k);
         }
         printf("\n");
-    }       
+    }
 }
