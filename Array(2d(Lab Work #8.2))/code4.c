@@ -73,3 +73,23 @@ int main() {
 
     printf("The sum of boundary elements of the array: %d\n", sum);
 }
+
+#include<stdio.h>
+
+int main(){
+    int s;
+
+    printf("Enter the array's row & column size: ");
+    scanf("%d", &size);
+
+    int a[5][5];
+    int sum = 0;
+
+    printf("Enter array's elements:\n");
+    for(int i=0;i<s;i++){
+        for(int j=0;j<s;j++){
+            printf("a[%d][%d] = ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+}
