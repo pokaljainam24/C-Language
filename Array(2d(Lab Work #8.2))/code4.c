@@ -74,6 +74,8 @@ int main() {
     printf("The sum of boundary elements of the array: %d\n", sum);
 }
 
+
+
 #include<stdio.h>
 
 int main(){
@@ -81,7 +83,7 @@ int main(){
 
     printf("Enter the array's row & column size: ");
     scanf("%d", &size);
-
+ 
     int a[5][5];
     int sum = 0;
 
@@ -92,4 +94,4 @@ int main(){
             scanf("%d", &a[i][j]);
         }
     }
-}
+}   
