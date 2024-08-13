@@ -39,59 +39,89 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int size;
-    
+
     printf("Enter the array's row & column size: ");
     scanf("%d", &size);
-    
+
     int a[5][5];
     int sum = 0;
-    
+
     printf("Enter array's elements:\n");
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
             printf("a[%d][%d] = ", i, j);
             scanf("%d", &a[i][j]);
         }
     }
-    
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            if (i == 0 || i == size - 1 || j == 0 || j == size - 1) {
+
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+            if (i == 0 || i == size - 1 || j == 0 || j == size - 1)
+            {
                 sum += a[i][j];
             }
         }
     }
     printf("\n");
-    
-    printf("2 4 1 6 3\n");
-    printf("9       7\n");
-    printf("8       5\n");
-    printf("3       1\n");
-    printf("2 3 9 5 7\n");
+
+    // printf("2 4 1 6 3\n");
+    // printf("9       7\n");
+    // printf("8       5\n");
+    // printf("3       1\n");
+    // printf("2 3 9 5 7\n");
+
+    int pattern[5][5] = {
+        {2, 4, 1, 6, 3},
+        {9, 0, 0, 0, 7},
+        {8, 0, 0, 0, 5},
+        {3, 0, 0, 0, 1},
+        {2, 3, 9, 5, 7}};
+
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            if (pattern[i][j] != 0)
+            {
+                printf("%d ", pattern[i][j]);
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
 
     printf("The sum of boundary elements of the array: %d\n", sum);
 }
 
+// #include <stdio.h>
 
+// int main()
+// {
+//     int s;
 
-#include<stdio.h>
+//     printf("Enter the array's row & column size: ");
+//     scanf("%d", &size);
 
-int main(){
-    int s;
+//     int a[5][5];
+//     int sum = 0;
 
-    printf("Enter the array's row & column size: ");
-    scanf("%d", &size);
- 
-    int a[5][5];
-    int sum = 0;
-
-    printf("Enter array's elements:\n");
-    for(int i=0;i<s;i++){
-        for(int j=0;j<s;j++){
-            printf("a[%d][%d] = ", i, j);
-            scanf("%d", &a[i][j]);
-        }
-    }
-}   
+//     printf("Enter array's elements:\n");
+//     for (int i = 0; i < s; i++)
+//     {
+//         for (int j = 0; j < s; j++)
+//         {
+//             printf("a[%d][%d] = ", i, j);
+//             scanf("%d", &a[i][j]);
+//         }
+//     }
+// }
