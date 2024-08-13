@@ -29,11 +29,13 @@
 int main()
 {
     int a[3][3], i, j, row, col, sum = 0;
+    
     printf("Enter the array's row size: ");
     scanf("%d", &row);
     printf("Enter the array's column size: ");
     scanf("%d", &col);
     printf("Enter array's elements:\n");
+
     for (i = 0; i < row; i++)
     {
         for (j = 0; j < col; j++)
@@ -42,20 +44,25 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
+
     printf("Enter row number: ");
     scanf("%d", &row);
     printf("Elements of row %d: ", row);
+
     for (j = 0; j < col; j++)
     {
         printf("%d, ", a[row][j]);
     }
-    printf("\nThe sum of a row %d: %d\n", row, sumElement(a[row], col));
+
+    printf("\nThe sum of a row %d: %d\n", row, a[row]+ col);
     printf("Enter column number: ");
     scanf("%d", &col);
     printf("Elements of column %d: ", col);
+
     for (i = 0; i < row; i++)
     {
         printf("%d, ", a[i][col]);
     }
-    printf("\nThe sum of column %d: %d\n", col, sumElements(a, row, col));
+
+    printf("\nThe sum of column %d: %d\n", col, a, row + col);
 }
