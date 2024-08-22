@@ -34,10 +34,17 @@
 
 #include <stdio.h>
 
-void main()
+int add(int a, int b);
+int subtract(int a, int b);
+int multiply(int a, int b);
+int divide(int a, int b);
+int modulus(int a, int b);
+
+int main()
 {
     int choice, num1, num2, result;
     char ch;
+
     while (1)
     {
         printf("Press 1 for +\n");
@@ -56,32 +63,76 @@ void main()
 
         printf("Enter the first number: ");
         scanf("%d", &num1);
+
         printf("Enter the second number: ");
         scanf("%d", &num2);
 
         switch (choice)
         {
         case 1:
-            result = num1 + num2;
-            printf("Addition of %d and %d is %d\n", result);
+            result = add(num1, num2);
+            printf("Addition of %d and %d is %d\n", num1, num2, result);
+            break;
         case 2:
-            result = num1 - num2;
-            printf("Subtraction of %d and %d is %d\n", result);
+            result = subtract(num1, num2);
+            printf("Subtraction of %d and %d is %d\n", num1, num2, result);
+            break;
         case 3:
-            result = num1 * num2;
-            printf("Multiplication of %d and %d is %d\n", result);
+            result = multiply(num1, num2);
+            printf("Multiplication of %d and %d is %d\n", num1, num2, result);
+            break;
         case 4:
-            result = num1 / num2;
-            printf("Division of %d and %d is %d\n", result);
+            if (num2 != 0)
+            {
+                result = divide(num1, num2);
+                printf("Division of %d and %d is %d\n", num1, num2, result);
+            }
+            else
+            {
+                printf("Error! Division by zero is not allowed.\n");
+            }
+            break;
         case 5:
-            result = num1 % num2;
-            printf("Modulus of %d and %d is %d\n", result);
+            if (num2 != 0)
+            {
+                result = modulus(num1, num2);
+                printf("Modulus of %d and %d is %d\n", num1, num2, result);
+            }
+            else
+            {
+                printf("Error! Modulus by zero is not allowed.\n");
+            }
+            break;
         default:
-            printf("Invalid choice\n");
+            printf("Invalid choice. Please try again.\n");
         }
 
         printf("\n");
     }
+    return 0;
 }
 
+int add(int a, int b)
+{
+    return a + b;
+}
 
+int subtract(int a, int b)
+{
+    return a - b;
+}
+
+int multiply(int a, int b)
+{
+    return a * b;
+}
+
+int divide(int a, int b)
+{
+    return a / b;
+}
+
+int modulus(int a, int b)
+{
+    return a % b;
+}
