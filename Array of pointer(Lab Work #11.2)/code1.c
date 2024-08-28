@@ -14,38 +14,40 @@
 // Reversed array elements:
 // 9, 49, 16, 81, 25
 
-#include <stdio.h>
+// #include <stdio.h>
 
-void main()
-{
-    int n, i, j, *p, *q;
-    printf("Enter the array's size: ");
-    scanf("%d", &n);
-    int a[n];
-    printf("Enter array elements:\n");
-    for (i = 0; i < n; i++)
-    {
-        printf("a[%d] = ", i);
-        scanf("%d",&a[i]);
-    }
-    p = a;
-    q = a + n - 1;
-    for (i = 0; i < n / 2; i++)
-    {
-        *p = (*p) * (*p);
-        p++;
-        *q = (*q) * (*q);
-        q--;
-    }
-    if (n % 2 != 0)
-    {
-        *p = (*p) * (*p);
-    }
-    p = a;
-    printf("Reversed array elements:\n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d, ", *p);
-        p++;
-    }
-}
+// void main()
+// {
+//     int n, i, j, *p, *q;
+//     printf("Enter the array's size: ");
+//     scanf("%d", &n);
+//     int a[n];
+//     printf("Enter array elements:\n");
+//     for (i = 0; i < n; i++)
+//     {
+//         printf("a[%d] = ", i);
+//         scanf("%d",&a[i]);
+//     }
+//     p = a;
+//     q = a + n - 1;
+//     for (i = 0; i < n / 2; i++)
+//     {
+//         *p = (*p) * (*p);
+//         p++;
+//         *q = (*q) * (*q);
+//         q--;
+//     }
+//     if (n % 2 != 0)
+//     {
+//         *p = (*p) * (*p);
+//     }
+//     p = a;
+//     printf("Reversed array elements:\n");
+//     for (i = 0; i < n; i++)
+//     {
+//         printf("%d, ", *p);
+//         p++;
+//     }
+// }
+
+
